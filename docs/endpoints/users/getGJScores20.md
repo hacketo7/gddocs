@@ -20,15 +20,17 @@ Gets the leaderboard scores.
 
 **gjp2** - The user's [GJP2](/topics/encryption/gjp.md)
 
-**type** - Can be `top` (`count` defaults to 100), `relative` (`count` defaults to 12), `friends` (`count` defaults to 1 if `accountID` and `gjp2` arent't provided), or `creators`. If left out it defaults to `top`
-
 **count** - Returns the amount of players specified. Limited to 100
+
+**type** - Can be `top` (`count` defaults to 100), `relative` (`count` defaults to 15 if no `accountID` is provided, or the `accountID`'s profile doesn't have over 501 stars, even if those criteria are met, no matter the `count` value, `count` will be 26.), `friends` (`count` defaults to 1 if `accountID` and `gjp2` arent't provided), or `creators`. If left out it defaults to `top`
 
 ## Response
 
 Returns a list of [user objects](/resources/server/user.md) in order based on which leaderboard you're viewing, separated by pipe `|` characters.
 
-Returns -1 if the `secret` parameter is incorrect or not provided, or if `type` parameter is `friends` and `accountID` parameter is provided, but not `gjp2`.
+**Note:** Sometimes may return empty user objects.
+
+Returns -1 if the `secret` is incorrect or not provided, or if `type` is `friends` and `accountID` is provided, but not `gjp2`.
 
 ## Example
 
