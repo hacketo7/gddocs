@@ -6,7 +6,7 @@ Gets the leaderboard scores.
 
 ### Required Parameters
 
-**secret** - Wmfd2893gb7
+**secret** - Wmfd2893gb7 (returns -1 if left out)
 
 ### Optional Parameters
 
