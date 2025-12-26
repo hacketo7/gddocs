@@ -28,7 +28,7 @@ Gets the leaderboard scores.
 
 Returns a list of [user objects](/resources/server/user.md) in order based on which leaderboard you're viewing, separated by pipe `|` characters.
 
-**Note:** Sometimes may return empty user objects.
+**Note:** Sometimes may return empty user objects, possibly because they don't meet star requirement.
 
 Returns -1 if the `secret` is incorrect or not provided, or if `type` is `friends` and `accountID` is provided, but not `gjp2`.
 
