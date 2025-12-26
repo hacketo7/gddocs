@@ -6,7 +6,7 @@ Gets the leaderboard scores.
 
 ### Required Parameters
 
-**secret** - Wmfd2893gb7 (returns -1 if left out)
+**secret** - Wmfd2893gb7
 
 ### Optional Parameters
 
@@ -27,6 +27,8 @@ Gets the leaderboard scores.
 ## Response
 
 Returns a list of [user objects](/resources/server/user.md) in order based on which leaderboard you're viewing, separated by pipe `|` characters.
+
+Returns -1 if secret is incorrect or not provided.
 
 ## Example
 
