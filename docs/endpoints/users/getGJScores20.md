@@ -24,6 +24,12 @@ Gets the leaderboard scores.
 
 **type** - Can be `top` (`count` defaults to 100), `relative` (`count` defaults to 15 if no `accountID` is provided, or the `accountID`'s profile doesn't have over 501 stars, even if those criteria are met, no matter the `count` value, it will always be 26.), `friends` (`count` defaults to 1 if `accountID` and `gjp2` arent't provided), or `creators`. If left out it defaults to `top`
 
+## Headers
+
+### Required Headers
+
+**User-Agent** = ""
+
 ## Response
 
 Returns a list of [user objects](/resources/server/user.md) in order based on which leaderboard you're viewing, separated by pipe `|` characters.
@@ -44,10 +50,14 @@ import requests
 data = {
     "secret": "Wmfd2893gb7",
     "type": "top",
-	"count": 20
+	"count": 100
 }
 
-req = requests.post('http://boomlings.com/database/getGJScores20.php', data=data)
+headers = {
+    "User-Agent": ""
+}
+
+req = requests.post('http://boomlings.com/database/getGJScores20.php', data=data, headers=headers)
 print(req.text)
 ```
 
