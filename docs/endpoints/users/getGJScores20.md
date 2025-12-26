@@ -22,7 +22,7 @@ Gets the leaderboard scores.
 
 **count** - Returns the amount of players specified. Limited to 100
 
-**type** - Can be `top` (`count` defaults to 100), `relative` (`count` defaults to 15 if no `accountID` is provided, or the `accountID`'s profile doesn't have over 501 stars, even if those criteria are met, no matter the `count` value, `count` will be 26.), `friends` (`count` defaults to 1 if `accountID` and `gjp2` arent't provided), or `creators`. If left out it defaults to `top`
+**type** - Can be `top` (`count` defaults to 100), `relative` (`count` defaults to 15 if no `accountID` is provided, or the `accountID`'s profile doesn't have over 501 stars, even if those criteria are met, no matter the `count` value, it will always be 26.), `friends` (`count` defaults to 1 if `accountID` and `gjp2` arent't provided), or `creators`. If left out it defaults to `top`
 
 ## Response
 
