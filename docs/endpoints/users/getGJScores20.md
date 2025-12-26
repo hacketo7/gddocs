@@ -28,7 +28,7 @@ Gets the leaderboard scores.
 
 Returns a list of [user objects](/resources/server/user.md) in order based on which leaderboard you're viewing, separated by pipe `|` characters.
 
-Returns -1 if secret is incorrect or not provided.
+Returns -1 if **secret** is incorrect or not provided.
 
 ## Example
 
